@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Diner</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -23,16 +23,23 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
+    <!-- header start -->
     <header>
       <!-- place navbar here -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h1>Diner</h1></a>
+      <nav class="navbar py-4 navbar-expand-lg bg-transparent">
+        <div class="container w-75">
+          <a class="navbar-brand text-white" href="#"><h1>Diner</h1></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -47,31 +54,64 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./about.html">About</a>
+                <a class="nav-link active text-white" href="./about.html"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./services.html">Services</a>
+                <a class="nav-link active text-white" href="./services.html"
+                  >Services</a
+                >
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="search-box d-flex position-relative" role="search">
               <input
-                class="form-control me-2"
+                class="search-input form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
+              <span class="search-icon fa fa-search search__icon"></span>
             </form>
+            <i class="mode-icon fa-solid fa-moon"></i>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <!-- header enđ -->
+    <main>
+      <section class="banner text-white">
+        <div class="container w-75">
+          <div class="banner-content">
+            <div class="banner-title">
+              <h3 class="mb-4">
+                The only thing we <br />
+                love more than food <br />is you!
+              </h3>
+            </div>
+            <div class="banner-paragraph fs-6 mt-md-3 mb-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.Ea ipsum sed consequuntur illum facere.
+              </p>
+            </div>
+            <div class="button">
+              <button class="btn px-5 py-3">
+                <span>Read More</span> <i class="fa fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
