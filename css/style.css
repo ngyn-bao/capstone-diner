@@ -50,14 +50,22 @@ body {
 }
 
 .btn {
-  color: white;
-  border: 2px solid white;
-  font-weight: 700;
+  border: 3px solid white;
   transition: all 0.4s;
+}
+
+.btn span,
+.btn i {
+  color: white;
+  font-weight: 700;
 }
 
 .btn:hover {
   background-color: #fff;
+}
+
+.btn:hover span,
+.btn:hover i {
   color: #ff6600;
 }
 
@@ -323,3 +331,357 @@ header {
   grid-gap: 30px;
 }
 /* feature end */
+
+/* homePage cover start */
+.homePageCover {
+  position: relative;
+  padding: 100px 0 50px;
+  background-image: url(../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.homePageCover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.homePageCover-content {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.homePageCover-content h3 {
+  font-size: 45px;
+}
+
+.side-btn {
+  background-color: var(--main-color);
+  border: 3px solid var(--main-color);
+  transition: all 0.4s;
+}
+
+.side-btn:hover {
+  opacity: 0.8;
+  background: var(--main-color);
+}
+.side-btn:hover span,
+.side-btn:hover i {
+  color: white;
+}
+/* homePage cover end */
+
+/* homePage stats start */
+.homePageStats {
+  margin-top: -70px;
+  position: relative;
+  z-index: 100;
+}
+
+.stats-item-content {
+  background-color: #fff;
+  padding: 50px 30px;
+  border-radius: var(--border-radius);
+  border: 1px solid #eee;
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.4s;
+}
+
+.stats-item-content:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+    rgba(71, 63, 79, 0.16) 0px 5px 10px;
+}
+
+.stats-item-content i {
+  color: #fff;
+  font-size: 26px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stats-item-content span {
+  font-size: 40px;
+  font-weight: 600;
+}
+/* homePage stats end */
+
+/* video start */
+.video {
+  padding: 50px 0;
+}
+
+.video-banner {
+  position: relative;
+  background-image: url(../img/banner3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  text-align: center;
+  position: relative;
+  margin: 0 50px;
+  border-radius: var(--border-radius);
+}
+
+.video-banner::before {
+  position: absolute;
+  content: "";
+  background: rgb(16 15 19 / 46%);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 50;
+}
+
+.play-btn {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  z-index: 100;
+  animation: ripple 1s linear infinite;
+  border-radius: 999px;
+  transition: all 0.4s;
+}
+
+.play-btn:hover {
+  transform: scale(1.2);
+}
+
+.play-btn:hover i {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.play-btn i {
+  color: var(--main-color);
+  font-size: 25px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 999px;
+  line-height: 80px;
+  text-align: center;
+}
+
+#small-dialog {
+  max-width: 750px;
+  margin: 40px auto;
+  position: relative;
+}
+div#small-dialog iframe {
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 10px;
+}
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+}
+.mfp-close,
+.mfp-close:active {
+  top: -40px;
+}
+
+/**
+   * Fade-zoom animation for first dialog
+   */
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.95;
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+/* video end */
+
+/* Post start */
+.post {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+.card-img-top {
+  position: relative;
+}
+
+.category {
+  position: absolute;
+  top: 430px;
+  left: 20px;
+}
+
+.category a {
+  color: var(--main-color);
+  transition: all 0.4s;
+}
+
+.category a:hover {
+  color: rgb(64, 0, 255);
+}
+
+.card-link {
+  transition: all 0.4s;
+}
+
+.card-link:hover {
+  color: var(--main-color);
+}
+/* Post end */
+
+/* Testimonial start */
+.testimonial {
+  padding: 40px 0;
+}
+
+.testimonial-item .people-img {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.testimonial-item .people-img img {
+  border-radius: 50%;
+}
+
+blockquote q {
+  letter-spacing: 1px;
+}
+
+.testimonial-item i {
+  color: var(--main-color);
+}
+.testimonial-item p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 18px;
+  color: rgb(157, 160, 167);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--main-color);
+}
+/* Testimonial end */
+
+/* Footer start */
+footer p,
+footer li a {
+  font-size: 17px;
+  color: rgb(165, 162, 161);
+  margin: 0;
+  width: 90%;
+}
+
+.socialmedia {
+  margin-top: 25px;
+}
+
+.socialmedia a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: var(--main-color);
+  border-radius: var(--border-radius);
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.socialmedia a:hover {
+  color: #fff;
+  background: var(--main-color);
+}
+
+.email {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.footer-btn {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: var(--main-color);
+  border-radius: var(--border-radius);
+  transition: all 0.4s;
+}
+
+.footer-btn span {
+  color: #fff;
+  font-weight: 800;
+}
+
+.footer-btn:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  border-top: 1px solid rgb(255 255 255 / 5%);
+}
+
+.copyright a {
+  color: var(--main-color);
+  transition: all 0.4s;
+}
+
+.copyright a:hover {
+  color: #fff;
+}
+/* Footer end */
+
+/* effects */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
+      0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
+      0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}
