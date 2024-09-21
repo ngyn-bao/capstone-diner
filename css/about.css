@@ -1,0 +1,160 @@
+/* About Page */
+/* Banner start */
+.banner.about {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgb(236 98 6 / 98%),
+      rgb(5 3 0 / 83%)
+    ),
+    url(../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+
+.banner.about .container {
+  padding-bottom: 0;
+}
+
+.banner-content.about {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  font-size: 20px;
+  font-weight: 540;
+}
+
+.banner-content.about a {
+  color: var(--main-color);
+}
+/* Banner end */
+
+/* Story start */
+.about-content img {
+  border-radius: var(--border-radius);
+  width: 90%;
+  text-align: end;
+}
+
+.about-content .button .side-btn {
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: var(--border-radius);
+  transition: all 0.4s;
+}
+
+.activity {
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.activity p {
+  font-size: 18px;
+  color: rgb(157, 160, 167);
+}
+
+.activity a {
+  color: var(--main-color);
+  transition: all 0.4s;
+}
+
+.activity a:hover {
+  opacity: 0.5;
+}
+/* Story end */
+
+/* Skill start */
+.skill {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+.skill p {
+  font-size: 18px;
+  color: rgba(22, 28, 45, 0.7);
+}
+
+.progress {
+  height: 7px;
+  background-color: rgba(22, 28, 45, 0.7);
+}
+
+.progress-bar {
+  background-color: var(--main-color);
+}
+
+.skill-img {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 30px;
+}
+
+.skill-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+/* Skill end */
+
+/* team start */
+.team {
+  padding: 50px 0;
+}
+
+.card-overlay {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  line-height: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.card-media {
+  position: absolute;
+  top: 75%;
+  left: 28%;
+}
+
+.card-media i {
+  color: white;
+}
+
+.card-media a {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(157, 157, 157, 0.5);
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+
+  transition: all 0.4s;
+}
+
+.card-img-top {
+  transition: all 0.4s;
+}
+
+.card-media a:hover {
+  background-color: #fff;
+}
+
+.card-media a:hover i {
+  color: var(--main-color);
+}
+
+.card-overlay:hover {
+  opacity: 1;
+}
+
+.card-title h4 a {
+  transition: all 0.4s;
+}
+
+.team-item:hover a {
+  color: var(--main-color);
+}
+/* team end */

@@ -630,6 +630,7 @@ footer li a {
   border-radius: var(--border-radius);
   margin-right: 10px;
   background-color: #fff;
+  transition: all 0.4s;
 }
 
 .socialmedia a:hover {
