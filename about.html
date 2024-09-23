@@ -66,7 +66,9 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active text-white" href="#">About</a>
+                  <a class="nav-link active text-white" href="./about.html"
+                    >About</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active text-white" href="./services.html"
@@ -76,14 +78,22 @@
               </ul>
               <form class="search-box d-flex position-relative" role="search">
                 <input
-                  class="search-input form-control me-2"
+                  class="search-input form-control me-2 input"
                   type="search"
                   placeholder="Search here..."
                   aria-label="Search"
                 />
-                <span class="search-icon fa fa-search search__icon"></span>
+                <span class="search-icon" id="searchIcon"
+                  ><i class="fa fa-search search__icon"></i
+                ></span>
               </form>
-              <i class="mode-icon fa-solid fa-moon"></i>
+              <div class="mode-content">
+                <i class="mode-icon fa-solid fa-moon" id="darkMode"></i>
+                <i
+                  class="mode-icon d-none fa-regular fa-sun"
+                  id="lightMode"
+                ></i>
+              </div>
             </div>
           </div>
         </nav>
@@ -105,7 +115,7 @@
       <!-- banner end -->
 
       <!-- story start -->
-      <section class="about">
+      <section class="about change-bg1">
         <div class="container">
           <div class="title">
             <h6>The Story</h6>
@@ -119,13 +129,13 @@
               <h3 class="fs-1 fw-semibold mb-0">
                 We found our creative space that is open for you.
               </h3>
-              <p class="my-4">
+              <p class="my-4 changeP">
                 Excepteur sint occaecat non proident, sunt in culpa quis.
                 Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum
                 fringilla, gravida felis vitae. Phasellus lacinia id, sunt in
                 culpa quis. Phasellus lacinia
               </p>
-              <p class="mb-4">
+              <p class="mb-4 changeP">
                 Excepteur sint occaecat non proident, sunt in culpa quis.
                 Phasellus lacinia id erat eu ullamcorper.
               </p>
@@ -178,7 +188,7 @@
       <!-- story end -->
 
       <!-- skill start -->
-      <section class="skill">
+      <section class="skill change-bg2">
         <div class="container">
           <div class="skill-content row">
             <div class="skill-left col-5 px-4">
@@ -186,13 +196,13 @@
                 <h6>Skills</h6>
                 <h3>Strategy is at the Heart of What We Do</h3>
               </div>
-              <p>
+              <p class="changeP">
                 Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                 ultrices in ligula.
               </p>
               <div class="skill-bar">
                 <div class="progress-info">
-                  <h6 class="fs-5 fw-bold">Digital Strategy</h6>
+                  <h6 class="fs-5 fw-bold changeA">Digital Strategy</h6>
                 </div>
                 <div class="progress mb-5">
                   <div
@@ -205,7 +215,7 @@
                   ></div>
                 </div>
                 <div class="progress-info">
-                  <h6 class="fs-5 fw-bold">Digital Strategy</h6>
+                  <h6 class="fs-5 fw-bold changeA">Financial Services</h6>
                 </div>
                 <div class="progress mb-5">
                   <div
@@ -218,7 +228,7 @@
                   ></div>
                 </div>
                 <div class="progress-info">
-                  <h6 class="fs-5 fw-bold">Digital Strategy</h6>
+                  <h6 class="fs-5 fw-bold changeA">Counsalting</h6>
                 </div>
                 <div class="progress mb-5">
                   <div
@@ -244,7 +254,7 @@
       <!-- skill end -->
 
       <!-- team start -->
-      <section class="team">
+      <section class="team change-bg1">
         <div class="container">
           <div class="title text-center">
             <h6>Our team</h6>
@@ -252,7 +262,7 @@
           </div>
           <div class="team-content row text-center">
             <div class="team-item col-4">
-              <div class="card" style="width: 23rem">
+              <div class="card change-bg1" style="width: 23rem">
                 <div class="card-top">
                   <img
                     src="./img/chef2.jpg"
@@ -276,15 +286,15 @@
                 <div class="card-body">
                   <div class="card-title">
                     <h4 class="fw-semibold mt-3">
-                      <a href="#!">Daniel Jacobs</a>
+                      <a class="changeA" href="#!">Daniel Jacobs</a>
                     </h4>
                   </div>
-                  <p class="card-text">Chef</p>
+                  <p class="card-text changeP">Chef</p>
                 </div>
               </div>
             </div>
             <div class="team-item col-4">
-              <div class="card" style="width: 23rem">
+              <div class="card change-bg1" style="width: 23rem">
                 <div class="card-top position-relative">
                   <img src="./img/chef1.jpg" class="card-img-top" alt="..." />
                 </div>
@@ -304,15 +314,15 @@
                 <div class="card-body">
                   <div class="card-title">
                     <h4 class="fw-semibold mt-3">
-                      <a href="#!">Claire Daniel</a>
+                      <a class="changeA" href="#!">Claire Daniel</a>
                     </h4>
                   </div>
-                  <p class="card-text">Chef</p>
+                  <p class="card-text changeP">Chef</p>
                 </div>
               </div>
             </div>
             <div class="team-item col-4">
-              <div class="card" style="width: 23rem">
+              <div class="card change-bg1" style="width: 23rem">
                 <div class="card-top position-relative">
                   <img src="./img/chef2.jpg" class="card-img-top" alt="..." />
                 </div>
@@ -332,10 +342,10 @@
                 <div class="card-body">
                   <div class="card-title">
                     <h4 class="fw-semibold mt-3">
-                      <a href="#!">Daniel Hunt</a>
+                      <a class="changeA" href="#!">Daniel Hunt</a>
                     </h4>
                   </div>
-                  <p class="card-text">Chef</p>
+                  <p class="card-text changeP">Chef</p>
                 </div>
               </div>
             </div>
@@ -403,11 +413,11 @@
                 <div class="mb-3">
                   <input
                     type="email"
-                    class="form-control email"
+                    class="form-control email input"
                     name=""
-                    id=""
                     aria-describedby="emailHelpId"
                     placeholder="Your Email Address"
+                    onclick="changePlaceHolderColor()"
                   />
                 </div>
               </div>
@@ -437,5 +447,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/about.js"></script>
   </body>
 </html>

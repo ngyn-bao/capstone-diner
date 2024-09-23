@@ -72,25 +72,34 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active text-white" href="#">Services</a>
+                  <a class="nav-link active text-white" href="./services.html"
+                    >Services</a
+                  >
                 </li>
               </ul>
               <form class="search-box d-flex position-relative" role="search">
                 <input
-                  class="search-input form-control me-2"
+                  class="search-input form-control me-2 input"
                   type="search"
                   placeholder="Search here..."
                   aria-label="Search"
                 />
-                <span class="search-icon fa fa-search search__icon"></span>
+                <span class="search-icon" id="searchIcon"
+                  ><i class="fa fa-search search__icon"></i
+                ></span>
               </form>
-              <i class="mode-icon fa-solid fa-moon"></i>
+              <div class="mode-content">
+                <i class="mode-icon fa-solid fa-moon" id="darkMode"></i>
+                <i
+                  class="mode-icon d-none fa-regular fa-sun"
+                  id="lightMode"
+                ></i>
+              </div>
             </div>
           </div>
         </nav>
       </header>
     </section>
-
     <main>
       <!-- banner start -->
       <section class="banner about text-white">
@@ -106,7 +115,7 @@
       <!-- banner end -->
 
       <!-- Offer start -->
-      <section class="about">
+      <section class="about change-bg1">
         <div class="container">
           <div class="about-content row">
             <div class="title col-5">
@@ -114,14 +123,14 @@
               <h3>We found our creative space that is open for you.</h3>
             </div>
             <div class="paragraph col-7 px-lg-5">
-              <p>
+              <p class="changeP">
                 Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                 ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
                 amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
                 amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non
                 velit, culpa!Lorem ipsum init dolor sit.
               </p>
-              <p>
+              <p class="changeP">
                 Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                 ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
                 amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
@@ -134,7 +143,7 @@
       <!-- Offer end -->
 
       <!-- Features start -->
-      <section class="feature">
+      <section class="feature change-bg1">
         <div class="container">
           <div class="feature-content">
             <div class="feature-row1 row justify-content-center">
@@ -145,11 +154,11 @@
                       <i class="fa-solid fa-users"></i>
                     </div>
                     <div class="text">
-                      <p class="m-0">01</p>
-                      <a class="mt-2 fs-4 fw-bold" href="#!">Soup</a>
+                      <p class="m-0 changeP">01</p>
+                      <a class="mt-2 fs-4 fw-bold changeA" href="#!">Soup</a>
                     </div>
                   </div>
-                  <div class="paragraph mt-4">
+                  <div class="paragraph mt-4 changeP">
                     Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
                     eligendi vitae sit.
                   </div>
@@ -162,11 +171,11 @@
                       <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div class="text">
-                      <p class="m-0">02</p>
-                      <a class="mt-2 fs-4 fw-bold" href="#!">Drinks</a>
+                      <p class="m-0 changeP">02</p>
+                      <a class="mt-2 fs-4 fw-bold changeA" href="#!">Drinks</a>
                     </div>
                   </div>
-                  <div class="paragraph mt-4">
+                  <div class="paragraph mt-4 changeP">
                     Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
                     eligendi vitae sit.
                   </div>
@@ -179,11 +188,11 @@
                       <i class="fa-solid fa-temperature-three-quarters"></i>
                     </div>
                     <div class="text">
-                      <p class="m-0">03</p>
-                      <a class="mt-2 fs-4 fw-bold" href="#!">Pizza</a>
+                      <p class="m-0 changeP">03</p>
+                      <a class="mt-2 fs-4 fw-bold changeA" href="#!">Pizza</a>
                     </div>
                   </div>
-                  <div class="paragraph mt-4">
+                  <div class="paragraph mt-4 changeP">
                     Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
                     eligendi vitae sit.
                   </div>
@@ -198,11 +207,13 @@
                       <i class="fa-solid fa-hands-asl-interpreting"></i>
                     </div>
                     <div class="text">
-                      <p class="m-0">04</p>
-                      <a class="mt-2 fs-4 fw-bold" href="#!">Breakfast</a>
+                      <p class="m-0 changeP">04</p>
+                      <a class="mt-2 fs-4 fw-bold changeA" href="#!"
+                        >Breakfast</a
+                      >
                     </div>
                   </div>
-                  <div class="paragraph mt-4">
+                  <div class="paragraph mt-4 changeP">
                     Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
                     eligendi vitae sit.
                   </div>
@@ -215,11 +226,11 @@
                       <i class="fa-solid fa-paintbrush"></i>
                     </div>
                     <div class="text">
-                      <p class="m-0">05</p>
-                      <a class="mt-2 fs-4 fw-bold" href="#!">Lunch</a>
+                      <p class="m-0 changeP">05</p>
+                      <a class="mt-2 fs-4 fw-bold changeA" href="#!">Lunch</a>
                     </div>
                   </div>
-                  <div class="paragraph mt-4">
+                  <div class="paragraph mt-4 changeP">
                     Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
                     eligendi vitae sit.
                   </div>
@@ -232,11 +243,11 @@
                       <i class="fa-solid fa-eraser"></i>
                     </div>
                     <div class="text">
-                      <p class="m-0">06</p>
-                      <a class="mt-2 fs-4 fw-bold" href="#!">Dinner</a>
+                      <p class="m-0 changeP">06</p>
+                      <a class="mt-2 fs-4 fw-bold changeA" href="#!">Dinner</a>
                     </div>
                   </div>
-                  <div class="paragraph mt-4">
+                  <div class="paragraph mt-4 changeP">
                     Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
                     eligendi vitae sit.
                   </div>
@@ -273,7 +284,7 @@
       <!-- Home Page cover end -->
 
       <!-- Plans start -->
-      <section class="plan">
+      <section class="plan change-bg1">
         <div class="container">
           <div class="title text-center">
             <h6>Plans</h6>
@@ -283,76 +294,84 @@
             <div class="plan-left col-6 px-5">
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Slow Cooked Egg</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">
+                    Slow Cooked Egg
+                  </h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$79.50</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Ravioli</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">Ravioli</h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$63.75</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Chicken Salad</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">Chicken Salad</h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$70.50</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Sweet Heat Salad</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">
+                    Sweet Heat Salad
+                  </h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$58.25</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
             </div>
             <div class="plan-right col-6 px-5">
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Spinach Chicken</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">
+                    Spinach Chicken
+                  </h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$63.75</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Tomahawk Steak</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">Tomahawk Steak</h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$70.50</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Cornish Turbot</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">Cornish Turbot</h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$58.25</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
               <div class="plan-item mb-4">
                 <div class="plan-top row pb-2">
-                  <h6 class="col-8 fs-5 fw-semibold">Permanent Waving</h6>
+                  <h6 class="col-8 fs-5 fw-semibold changeA">
+                    Permanent Waving
+                  </h6>
                   <h6 class="col-4 text-end fs-5 fw-semibold">$79.50</h6>
                 </div>
                 <div class="plan-body">
-                  <p>Lorem ipsum dolor sit amet adipiscing.</p>
+                  <p class="changeP">Lorem ipsum dolor sit amet adipiscing.</p>
                 </div>
               </div>
             </div>
@@ -454,5 +473,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/services.js"></script>
   </body>
 </html>
