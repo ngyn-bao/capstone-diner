@@ -38,23 +38,45 @@
   </head>
 
   <body>
+    <!-- header start -->
     <section class="heading">
       <header>
         <!-- place navbar here -->
         <nav class="navbar py-4 navbar-expand-lg bg-transparent">
-          <div class="container w-75">
+          <div class="container w-75 d-flex">
             <a class="navbar-brand text-white" href="#"><h1>Diner</h1></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="nav-side d-flex align-items-center">
+              <form class="search-box d-flex position-relative" role="search">
+                <input
+                  class="search-input form-control me-2 input"
+                  type="search"
+                  placeholder="Search here..."
+                  aria-label="Search"
+                />
+                <span class="search-icon" id="searchIcon"
+                  ><i class="fa fa-search search__icon"></i
+                ></span>
+              </form>
+              <div class="mode-content">
+                <i class="mode-icon fa-solid fa-moon" id="darkMode"></i>
+                <i
+                  class="mode-icon d-none fa-regular fa-sun"
+                  id="lightMode"
+                ></i>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -76,29 +98,12 @@
                   >
                 </li>
               </ul>
-              <form class="search-box d-flex position-relative" role="search">
-                <input
-                  class="search-input form-control me-2 input"
-                  type="search"
-                  placeholder="Search here..."
-                  aria-label="Search"
-                />
-                <span class="search-icon" id="searchIcon"
-                  ><i class="fa fa-search search__icon"></i
-                ></span>
-              </form>
-              <div class="mode-content">
-                <i class="mode-icon fa-solid fa-moon" id="darkMode"></i>
-                <i
-                  class="mode-icon d-none fa-regular fa-sun"
-                  id="lightMode"
-                ></i>
-              </div>
             </div>
           </div>
         </nav>
       </header>
     </section>
+    <!-- header end -->
 
     <main>
       <!-- banner start -->
@@ -122,10 +127,10 @@
             <h3>About Us</h3>
           </div>
           <div class="about-content row">
-            <div class="img col-6">
+            <div class="img col-lg-6">
               <img src="./img/banner1.jpg" alt="" />
             </div>
-            <div class="paragraph col-6 px-lg-5">
+            <div class="paragraph col-lg-6 px-lg-5">
               <h3 class="fs-1 fw-semibold mb-0">
                 We found our creative space that is open for you.
               </h3>
@@ -149,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="activity d-grid mt-5">
+          <div class="activity d-grid mt-5 mt-md-4 mt-lg-5">
             <div class="grid">
               <div class="title">
                 <h3>What we Do ?.</h3>
@@ -191,7 +196,7 @@
       <section class="skill change-bg2">
         <div class="container">
           <div class="skill-content row">
-            <div class="skill-left col-5 px-4">
+            <div class="skill-left col-lg-5 px-4">
               <div class="title">
                 <h6>Skills</h6>
                 <h3>Strategy is at the Heart of What We Do</h3>
@@ -242,7 +247,7 @@
                 </div>
               </div>
             </div>
-            <div class="skill-right col-7 px-5 py-4">
+            <div class="skill-right col-lg-7 px-xxl-5 py-xxl-4">
               <div class="skill-img d-grid">
                 <img src="./img/g1.jpg" alt="" />
                 <img src="./img/g2.jpg" alt="" />
@@ -261,8 +266,8 @@
             <h3>Meet Our Chefs</h3>
           </div>
           <div class="team-content row text-center">
-            <div class="team-item col-4">
-              <div class="card change-bg1" style="width: 23rem">
+            <div class="team-item col-12 col-md-6 col-lg-4">
+              <div class="card change-bg1">
                 <div class="card-top">
                   <img
                     src="./img/chef2.jpg"
@@ -293,8 +298,8 @@
                 </div>
               </div>
             </div>
-            <div class="team-item col-4">
-              <div class="card change-bg1" style="width: 23rem">
+            <div class="team-item col-12 col-md-6 col-lg-4">
+              <div class="card change-bg1">
                 <div class="card-top position-relative">
                   <img src="./img/chef1.jpg" class="card-img-top" alt="..." />
                 </div>
@@ -321,8 +326,8 @@
                 </div>
               </div>
             </div>
-            <div class="team-item col-4">
-              <div class="card change-bg1" style="width: 23rem">
+            <div class="team-item col-12 col-md-6 col-lg-4">
+              <div class="card change-bg1">
                 <div class="card-top position-relative">
                   <img src="./img/chef2.jpg" class="card-img-top" alt="..." />
                 </div>
@@ -358,8 +363,8 @@
       <!-- place footer here -->
       <footer class="py-5 bg-black pb-1">
         <div class="container pb-1">
-          <div class="footer-content row text-white py-5">
-            <div class="footer-list col-4">
+          <div class="footer-content row text-white py-md-3 py-lg-5">
+            <div class="footer-list col-12 col-md-6 col-lg-4 mt-4">
               <div class="footer-title mb-3">
                 <h2><a href="#" class="text-white">Diner</a></h2>
               </div>
@@ -384,7 +389,7 @@
                 ></a>
               </div>
             </div>
-            <div class="footer-list col-2">
+            <div class="footer-list col-6 col-md-6 col-lg-2 mt-4">
               <div class="footer-title mb-3">
                 <h6 class="fs-4 fw-semibold">Categories</h6>
               </div>
@@ -393,7 +398,7 @@
                 <li><a href="#!">Food</a></li>
               </ul>
             </div>
-            <div class="footer-list col-2">
+            <div class="footer-list col-6 col-md-6 col-lg-2 mt-4">
               <div class="footer-title mb-3">
                 <h6 class="fs-4 fw-semibold">Archives</h6>
               </div>
@@ -401,7 +406,7 @@
                 <li><a href="#!">March 2021</a></li>
               </ul>
             </div>
-            <div class="footer-list col-4">
+            <div class="footer-list col-12 col-md-6 col-lg-4 mt-4">
               <div class="footer-title mb-3">
                 <h6 class="fs-4 fw-semibold">Subscribe to our Newsletter</h6>
               </div>
@@ -434,6 +439,11 @@
           </div>
         </div>
       </footer>
+
+      <!-- backtoTop -->
+      <a href="#" class="cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
     </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -447,6 +457,9 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
 
     <script src="./js/about.js"></script>
   </body>
