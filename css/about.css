@@ -221,6 +221,10 @@
     padding: 30px 15px;
   }
 
+  .banner.about {
+    background-size: 300%;
+  }
+
   .banner-content.about {
     top: 40%;
   }
