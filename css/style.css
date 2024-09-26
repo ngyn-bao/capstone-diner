@@ -937,6 +937,10 @@ footer li a {
     top: 375px;
   }
 
+  .menu-item .img::before {
+    width: 84.5%;
+  }
+
   .video-banner {
     width: 80%;
   }
@@ -951,5 +955,6 @@ footer li a {
 
   .copyright {
     text-align: center;
+    width: 99%;
   }
 }
